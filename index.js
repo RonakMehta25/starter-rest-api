@@ -33,7 +33,8 @@ app.post('/:col/:key', async (req, res) => {
   
   const item = await db.collection(col).set(key, req.body.Text)
   
-  console.log(JSON.stringify(item, null, 2))
+  //console.log(JSON.stringify(item, null, 2))
+  console.log(item)
   res.json(item).end()
 })
 

@@ -3,10 +3,10 @@ const app = express()
 const db = require('@cyclic.sh/dynamodb')
 const bodyParser = require('body-parser');
 
-app.use(bodyParser.json());
+//app.use(bodyParser.json());
 
-//app.use(express.json())
-//app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 // #############################################################################
 // This configures static hosting for files in /public that have the extensions
